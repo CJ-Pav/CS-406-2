@@ -1,0 +1,101 @@
+<div class="col mb-5">
+    <div class="card h-100">
+        <!-- Sale badge-->
+        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+        <!-- Product image-->
+        <img class="card-img-top" src="pictures/foot_massage_cropped.jpg" alt="..." />
+        <!-- Product details-->
+        <div class="card-body p-4">
+            <div class="text-center">
+                <!-- Product name-->
+                <h5 class="fw-bolder">Foot Massage</h5>
+                <!-- Product reviews-->
+                <div class="d-flex justify-content-center small text-warning mb-2">
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                </div>
+                <!-- Product price-->
+                <span class="text-muted text-decoration-line-through">$60.00</span>
+                $50.00
+            </div>
+        </div>
+
+        <!-- Product actions-->
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center"><a class="btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                    data-bs-target="#modal3">View Details</a></div>
+        </div>
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+                <a class="btn btn-secondary mt-auto" id="click-schedule-deep-tissue">Schedule</a>
+            </div>
+        </div>
+        <script>
+            document.getElementById('click-schedule-deep-tissue').addEventListener('click', function () {
+                window.open('https://calendly.com/pavlovic-nfg/basic-30min', '_blank', 'noopener');
+            });
+        </script>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Foot Massage</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            A foot massage is a therapeutic technique that focuses on the feet, providing relaxation and
+                            potential health benefits. Rooted in ancient practices such as reflexology, foot massages
+                            involve the application of varying pressure and techniques to the feet, which are believed
+                            to correspond to different organs and systems in the body. Here's a summary of what a foot
+                            massage entails:
+                        </p>
+                        <p>
+                            During a foot massage, individuals typically recline in a comfortable position as a skilled
+                            massage therapist uses their hands, fingers, and sometimes specialized tools to apply
+                            pressure to specific points on the feet. The pressure may range from gentle to firm,
+                            depending on personal preference and the desired therapeutic outcome.
+                        </p>
+                        <p>
+                            Foot massages are known for promoting relaxation, reducing stress, and improving
+                            circulation. The practice is based on the idea that various points on the feet are connected
+                            to other parts of the body, and stimulating these points can have positive effects on
+                            overall well-being.
+                        </p>
+                        <p>
+                            In addition to relaxation, foot massages may help alleviate foot pain, improve flexibility,
+                            and enhance the overall health of the feet. Some people seek foot massages for specific
+                            issues, such as plantar fasciitis or tired, achy feet resulting from prolonged standing or
+                            walking.
+                        </p>
+                        <p>
+                            Whether as a standalone treatment or as part of a full-body massage, foot massages provide a
+                            delightful and rejuvenating experience. Many find the practice to be a soothing way to
+                            unwind, and it can be a valuable component of self-care for promoting both physical and
+                            mental wellness.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                        <button type="button" class="btn btn-success" id="click-schedule-deep-tissue">
+                            Schedule
+                        </button>
+                        <script>
+                            document.getElementById('click-schedule-deep-tissue').addEventListener('click', function () {
+                                window.open('https://calendly.com/pavlovic-nfg/basic-30min', '_blank', 'noopener');
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

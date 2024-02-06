@@ -1,0 +1,93 @@
+<div class="col mb-5">
+    <div class="card h-100">
+        <!-- Product image-->
+        <img class="card-img-top" src="pictures/regular_massage_cropped.jpg" alt="..." />
+        <!-- Product details-->
+        <div class="card-body p-4">
+            <div class="text-center">
+                <!-- Product name-->
+                <h5 class="fw-bolder">Basic Massage</h5>
+                <div class="d-flex justify-content-center small text-warning mb-2">
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                </div>
+                <!-- Product price-->
+                $60
+            </div>
+        </div>
+
+        <!-- Product actions-->
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center"><a class="btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                    data-bs-target="#modal1">View Details</a></div>
+        </div>
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+                <a class="btn btn-secondary mt-auto" id="click-schedule-regular">Schedule</a>
+            </div>
+        </div>
+        <script>
+            document.getElementById('click-schedule-regular').addEventListener('click', function () {
+                window.open('https://calendly.com/pavlovic-nfg/basic-30min', '_blank', 'noopener');
+            });
+        </script>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Indulge your senses and soothe your body with our rejuvenating regular massage experience.
+                            Our skilled and certified massage therapists are dedicated to providing a customized session
+                            tailored to your unique needs, promoting relaxation, stress relief, and overall well-being.
+                        </p>
+                        <p>
+                            Upon arrival, you'll be greeted by a calming ambiance that sets the tone for your tranquil
+                            journey. Begin by discussing your preferences and any specific areas of concern with your
+                            therapist, ensuring a personalized and effective treatment.
+                        </p>
+                        <p>
+                            As you settle onto the comfortable massage table, let the expert hands of our therapists
+                            work their magic, employing a combination of skilled strokes and pressure to release muscle
+                            tension and enhance circulation. The therapeutic benefits of the massage extend beyond the
+                            physical, offering a mental escape from the demands of daily life.
+                        </p>
+                        <p>
+                            Immerse yourself in a world of serenity as soothing music and calming aromas create an
+                            atmosphere conducive to relaxation. Feel the gentle kneading and rhythmic movements melt
+                            away stress, leaving you with a renewed sense of balance and tranquility.
+                        </p>
+                        <p>
+                            Whether you're seeking relief from muscle stiffness, stress, or simply yearning for a
+                            pampering experience, our regular massage promises to be a rejuvenating retreat for your
+                            body and mind. Treat yourself to the therapeutic touch that promotes overall wellness and
+                            leaves you feeling refreshed, revitalized, and ready to face the world with a renewed sense
+                            of energy.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success" id="click-schedule-regular-2">
+                            Schedule
+                        </button>
+                        <script>
+                            document.getElementById('click-schedule-regular-2').addEventListener('click', function () {
+                                window.open('https://calendly.com/pavlovic-nfg/basic-30min', '_blank', 'noopener');
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

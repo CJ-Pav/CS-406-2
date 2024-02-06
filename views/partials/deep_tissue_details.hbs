@@ -1,0 +1,93 @@
+<div class="col mb-5">
+    <div class="card h-100">
+        <!-- Sale badge-->
+        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+        <!-- Product image-->
+        <img class="card-img-top" src="pictures/deep_tissue_cropped.jpg" alt="..." />
+        <!-- Product details-->
+        <div class="card-body p-4">
+            <div class="text-center">
+                <!-- Product name-->
+                <h5 class="fw-bolder">Deep Tissue</h5>
+                <!-- Product reviews-->
+                <div class="d-flex justify-content-center small text-warning mb-2">
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                </div>
+                <!-- Product price-->
+                <span class="text-muted text-decoration-line-through">$80.00</span>
+                $70.00
+            </div>
+        </div>
+
+        <!-- Product actions-->
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center"><a class="btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                    data-bs-target="#modal2">View Details</a></div>
+        </div>
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+                <a class="btn btn-secondary mt-auto" id="click-schedule-deep-tissue">Schedule</a>
+            </div>
+        </div>
+        <script>
+            document.getElementById('click-schedule-deep-tissue').addEventListener('click', function () {
+                window.open('https://calendly.com/pavlovic-nfg/basic-30min', '_blank', 'noopener');
+            });
+        </script>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Deep Tissue</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            A deep tissue massage is a therapeutic technique focused on addressing chronic muscle
+                            tension, knots, and areas of stiffness within the deeper layers of muscles and connective
+                            tissues. Unlike a traditional massage, which may use lighter pressure and longer strokes, a
+                            deep tissue massage involves applying firm pressure and concentrated efforts to target
+                            specific areas of tension. Skilled massage therapists use their hands, fingers, forearms,
+                            and elbows to penetrate deep into the muscle layers, releasing adhesions and promoting
+                            increased blood flow.
+                        </p>
+                        <p>
+                            This type of massage aims to break down tight muscle fibers, reduce pain, and improve
+                            flexibility. While deep tissue massage can involve some discomfort during the process,
+                            clients often experience significant relief and increased mobility afterward. It is
+                            particularly beneficial for individuals with chronic pain conditions, sports-related
+                            injuries, or those seeking targeted muscle recovery.
+                        </p>
+                        <p>
+                            The overall goal of a deep tissue massage is to alleviate chronic tension, reduce muscle
+                            soreness, and enhance overall physical well-being. It is recommended for individuals seeking
+                            a more intense and therapeutic massage experience to address specific areas of discomfort
+                            and promote long-lasting relief.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                        <button type="button" class="btn btn-success" id="click-schedule-deep-tissue">
+                            Schedule
+                        </button>
+                        <script>
+                            document.getElementById('click-schedule-deep-tissue').addEventListener('click', function () {
+                                window.open('https://calendly.com/pavlovic-nfg/basic-30min', '_blank', 'noopener');
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
