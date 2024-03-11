@@ -3,8 +3,9 @@ const express = require('express'),
     exphbs  = require('express-handlebars'),
     session = require('express-session'),
     bodyParser = require('body-parser'),
-    cookieParser = require('cookie-parser'),
-    port = 80;
+    cookieParser = require('cookie-parser');    
+
+var port = process.env.PORT || 80;
 
 var app = express();
 app.use(cookieParser());
