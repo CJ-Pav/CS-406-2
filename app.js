@@ -5,7 +5,7 @@ const express = require('express'),
     bodyParser = require('body-parser'),
     cookieParser = require('cookie-parser');    
 
-var port = process.env.PORT || 80;
+var port = process.env.PORT || 8080;
 
 var app = express();
 app.use(cookieParser());
